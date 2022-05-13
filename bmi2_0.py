@@ -5,7 +5,7 @@ weight = float(input("enter your weight in kg: "))
 
 # Write your code below this line 👇
 # BMI Calculation Formula
-bmi = weight / (height ** 2)
+bmi = round(weight / height ** 2)
 
 # BMI Logics
 if bmi < 18.05:
