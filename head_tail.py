@@ -3,6 +3,6 @@ import random
 random_side = random.randint(0, 1)
 
 if random_side == 0:
-    print("tail")
+    print("tails")
 else:
-    print("head")
+    print("heads")
