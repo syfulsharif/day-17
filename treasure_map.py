@@ -18,7 +18,7 @@ position = input("Where do you want to put the treasure? ")
 if int(position) < 34 and int(position) > 10:
     colum = int(position[1]) - 1
     row = int(position[0]) - 1
-    map[colum][row] = "x"
+    map[colum][row] = "X"
 else:
     print("Please enter a valid position less than 34 and more than 10")
 
