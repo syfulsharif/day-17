@@ -95,10 +95,15 @@ while not end_of_game:
     guess = guess.lower()
     print(guess)
     i = 0
+    lives = 6
     while i < len(chosen_word):
         if chosen_word[i] == guess:
             display[i] = guess
+        else:
+            lives -= 1
+            print(stages[lives])
         i += 1
+
     print(display)
 
     if "_" not in display:
