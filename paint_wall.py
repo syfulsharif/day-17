@@ -15,4 +15,5 @@ def paint_calc(height, width, cover):
 test_h = int(input("Height of wall: "))
 test_w = int(input("Width of wall: "))
 coverage = 5
-print(paint_calc(height=test_h, width=test_w, cover=coverage))
+cans_needed_to_paint = paint_calc(height=test_h, width=test_w, cover=coverage)
+print(f"You'll need {cans_needed_to_paint} cans of paint.")
