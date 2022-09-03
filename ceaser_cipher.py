@@ -27,4 +27,9 @@ def decrypt(txt, shift_number):
     return decrypted_message
 
 
-print(decrypt(txt=text, shift_number=shift))
+if direction == "encode":
+    print(f"The encoded text is {encrypt(txt=text, shift_number=shift)}")
+elif direction == "decode":
+    print(f"The decoded text is {decrypt(txt=text, shift_number=shift)}")
+else:
+    print(f"{direction} is not an intended comman for this program!")
