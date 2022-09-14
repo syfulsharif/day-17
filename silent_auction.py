@@ -22,7 +22,7 @@ def highest_bidder(bids):
 
 while next_bidder:
     save_data()
-    next_bid = input("Are there any new bidder? Type: 'yes' or 'no'")
+    next_bid = input("Are there any new bidder? Type: 'yes' or 'no'\n")
     if next_bid == "yes":
         os.system('clear')
         continue
@@ -30,5 +30,5 @@ while next_bidder:
         next_bidder = False
         highest_bidder(bids)
 
-highest_bid = 0
+
 print(bids)
