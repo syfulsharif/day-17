@@ -17,12 +17,13 @@ user_chosen_level = input("Choose a difficulty. Type 'easy' or 'hard': \n").lowe
 
 
 def take_user_guess(life):
+    """Takes user input from the user and returns the guess as integer"""
     user_guess = int(input(f"You have {life} attempts remaining to guess the number."))
     return user_guess
 
 
 def play_game():
-
+    """Plays the number guessing game as long as the correct number guessed by the user and user has attempts left"""
     if user_chosen_level == "easy":
         user_life = EASY_LEVEL
     elif user_chosen_level == "hard":
@@ -33,8 +34,6 @@ def play_game():
 
     # if user_guess_num == computer_number:
     #     print(f"You got it! The answer was {computer_number}.")
-    if user_guess_num == computer_number:
-        print(f"You got it! The answer is {computer_number}.")
 
     while user_life > 0 and user_guess_num != computer_number:
         if user_guess_num > computer_number:
@@ -51,6 +50,9 @@ def play_game():
 
     if user_life == 0:
         print("You used all your chances, You lose!")
+
+    if user_guess_num == computer_number:
+        print(f"You got it! The answer is {computer_number}.")
 
 
 play_game()
