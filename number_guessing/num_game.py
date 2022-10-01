@@ -18,7 +18,9 @@ user_chosen_level = input("Choose a difficulty. Type 'easy' or 'hard': \n").lowe
 
 def take_user_guess(life):
     """Takes user input from the user and returns the guess as integer"""
-    user_guess = int(input(f"You have {life} attempts remaining to guess the number."))
+    user_guess = int(
+        input(f"You have {life} attempts remaining to guess the number.\n")
+    )
     return user_guess
 
 
